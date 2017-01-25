@@ -1,0 +1,13 @@
+{
+	"key1": "simple string",
+	"key2": 42,
+	"key3": {
+		"prop1": "p1",
+		"prop2": "p2"
+	},
+	"key4": [
+		1,
+		2,
+		3
+	]
+}

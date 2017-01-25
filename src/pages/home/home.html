@@ -1,0 +1,39 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Configuration Sample
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<ion-card>
+		<ion-card-header>
+			Show current configuration using
+		</ion-card-header>
+
+		<ion-list>
+			<button ion-item (click)="goToConfigurationPage()">
+				Directive in own page
+			</button>
+			<button ion-item (click)="openModal()">
+				Provided modal
+			</button>
+		</ion-list>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			Language
+		</ion-card-header>
+
+		<ion-list radio-group>
+			<ion-item *ngFor="let language of languages">
+				<ion-label>{{language}}</ion-label>
+				<ion-radio checked="{{language === currentLanguage}}" value="{{language}}" (ionSelect)="changeLanguage(language)"></ion-radio>
+			</ion-item>
+		</ion-list>
+	</ion-card>
+
+</ion-content>

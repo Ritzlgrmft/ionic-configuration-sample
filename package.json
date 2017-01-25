@@ -1,0 +1,52 @@
+{
+	"name": "ionic-configuration-sample",
+	"version": "1.0.0",
+	"description": "Sample for ionic-configuration-service and ionic-configuration-viewer",
+	"author": {
+		"name": "Markus Wagner",
+		"email": "markus.wagner02@web.de"
+	},
+	"repository": "https://github.com/Ritzlgrmft/ionic-configuration-sample.git",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"clean": "ionic-app-scripts clean",
+		"build": "ionic-app-scripts build",
+		"ionic:build": "ionic-app-scripts build",
+		"ionic:serve": "ionic-app-scripts serve",
+		"lint": "tslint --project tsconfig.json --config tslint.typecheck.json --format verbose --type-check --exclude \"**/*.spec.ts\""
+	},
+	"config": {
+		"ionic_copy": "./config/copy.config.js",
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"dependencies": {
+		"@angular/common": "2.2.1",
+		"@angular/compiler": "2.2.1",
+		"@angular/compiler-cli": "2.2.1",
+		"@angular/core": "2.2.1",
+		"@angular/forms": "2.2.1",
+		"@angular/http": "2.2.1",
+		"@angular/platform-browser": "2.2.1",
+		"@angular/platform-browser-dynamic": "2.2.1",
+		"@angular/platform-server": "2.2.1",
+		"@ionic/storage": "1.1.7",
+		"ionic-angular": "2.0.0-rc.5-201701112208",
+		"ionic-native": "2.3.0",
+		"ionicons": "3.0.0",
+		"rxjs": "5.0.0-beta.12",
+		"zone.js": "0.6.26",
+		"cz-conventional-changelog": "~1.2.0",
+		"ionic-configuration-service": "3.0.1",
+		"ionic-configuration-viewer": "../ionic-configuration-viewer/ionic-configuration-viewer-0.0.0-development.tgz"
+	},
+	"devDependencies": {
+		"@ionic/app-scripts": "1.0.0",
+		"@types/cordova": "0.0.34",
+		"codelyzer": "2.0.0-beta.4",
+		"tslint": "4.3.1",
+		"typescript": "2.0.9"
+	}
+}
