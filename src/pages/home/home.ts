@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { NavController } from "ionic-angular";
 
 import { ConfigurationPage } from "../configuration/configuration";
-import { ConfigurationViewerModalManager } from "ionic-configuration-viewer";
+import { ConfigurationViewerModalManager, ConfigurationViewerTranslation } from "ionic-configuration-viewer";
 
 /**
  * Home page.
@@ -18,16 +18,22 @@ export class HomePage {
 	public languages: string[];
 
 	/**
-	 * Current selected language.
+	 * Selected language.
 	 */
-	public currentLanguage: string;
+	public selectedLanguage: string;
+
+	/**
+	 * Custom translation, used if selectedLanguage === "custom"
+	 */
+	public translation: ConfigurationViewerTranslation;
 
 	constructor(
 		private navController: NavController,
 		private configurationViewerModalManager: ConfigurationViewerModalManager) {
 
-		this.languages = ["en", "de"];
-		this.currentLanguage = "en";
+		this.languages = ["en", "de", "custom"];
+		this.selectedLanguage = "en";
+		this.translation = { title: "myTitle", cancel: "myCancel" };
 	}
 
 	/**
@@ -41,13 +47,17 @@ export class HomePage {
 	 * Open configuration modal.
 	 */
 	public openModal(): void {
-		this.configurationViewerModalManager.openModal(this.currentLanguage);
+		if (this.selectedLanguage === "custom") {
+			this.configurationViewerModalManager.openModal(undefined, this.translation);
+		} else {
+			this.configurationViewerModalManager.openModal(this.selectedLanguage);
+		}
 	}
 
 	/**
 	 * Change the language for the configuration modal.
 	 */
 	public changeLanguage(language: string): void {
-		this.currentLanguage = language;
+		this.selectedLanguage = language;
 	}
 }

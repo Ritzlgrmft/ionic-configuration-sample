@@ -34,9 +34,21 @@
 		<ion-list radio-group>
 			<ion-item *ngFor="let language of languages">
 				<ion-label>{{language}}</ion-label>
-				<ion-radio checked="{{language === currentLanguage}}" value="{{language}}" (ionSelect)="changeLanguage(language)"></ion-radio>
+				<ion-radio checked="{{language === selectedLanguage}}" value="{{language}}" (ionSelect)="changeLanguage(language)"></ion-radio>
 			</ion-item>
 		</ion-list>
+
+		<ion-item *ngIf="selectedLanguage === 'custom'">
+			<ion-label fixed>title</ion-label>
+			<ion-input type="text" [(ngModel)]="translation.title"></ion-input>
+		</ion-item>
+
+		<ion-item *ngIf="selectedLanguage === 'custom'">
+			<ion-label fixed>cancel</ion-label>
+			<ion-input type="text" [(ngModel)]="translation.cancel"></ion-input>
+		</ion-item>
+
+
 	</ion-card>
 
 </ion-content>

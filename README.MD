@@ -23,5 +23,4 @@ ionic serve
 ## Todo
 
 - add Screenshots
-- shorten labels
 - add icon and splashscreen
