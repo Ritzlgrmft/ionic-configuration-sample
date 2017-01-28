@@ -23,4 +23,6 @@ ionic serve
 ## Todo
 
 - add Screenshots
-- add icon and splashscreen
+- add splashscreen
+- add changelog
+- add splashscreen plugin
