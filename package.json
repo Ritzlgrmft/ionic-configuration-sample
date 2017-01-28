@@ -1,6 +1,6 @@
 {
 	"name": "ionic-configuration-sample",
-	"version": "1.0.0",
+	"version": "0.0.0-development",
 	"description": "Sample for ionic-configuration-service and ionic-configuration-viewer",
 	"author": {
 		"name": "Markus Wagner",
@@ -15,7 +15,8 @@
 		"ionic:build": "ionic-app-scripts build",
 		"ionic:serve": "ionic-app-scripts serve",
 		"lint": "tslint --project tsconfig.json --config tslint.typecheck.json --format verbose --type-check",
-		"test": "npm run lint && npm run ionic:build && npm run ionic:build --prod"
+		"test": "npm run lint && npm run ionic:build && npm run ionic:build --prod",
+		"semantic-release": "semantic-release pre && semantic-release post"
 	},
 	"config": {
 		"ionic_copy": "./config/copy.config.js",
@@ -48,6 +49,7 @@
 		"@types/cordova": "0.0.34",
 		"codelyzer": "2.0.0-beta.4",
 		"tslint": "4.4.2",
-		"typescript": "2.0.9"
+		"typescript": "2.0.9",
+		"semantic-release": "^6.3.2"
 	}
 }
