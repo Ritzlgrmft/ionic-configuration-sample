@@ -11,6 +11,10 @@ The configuration sample is a small Ionic app demonstrating the usage of
 [ionic-configuration-service](https://github.com/Ritzlgrmft/ionic-configuration-service) and
 [ionic-configuration-viewer](https://github.com/Ritzlgrmft/ionic-configuration-viewer).
 
+![Home Page](docs/home-page.png)
+![Configuration Page](docs/configuration-page.png)
+![Configuration Modal](docs/configuration-modal.png)
+
 ## Usage
 
 ```bash
@@ -19,8 +23,3 @@ cd ionic-configuration-sample
 npm install
 ionic serve
 ```
-
-## Todo
-
-- add Screenshots
-- add changelog
