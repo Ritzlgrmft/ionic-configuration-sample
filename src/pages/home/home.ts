@@ -1,14 +1,14 @@
 import { Component } from "@angular/core";
 import { NavController } from "ionic-angular";
 
-import { ConfigurationPage } from "../configuration/configuration";
 import { ConfigurationViewerModalManager, ConfigurationViewerTranslation } from "ionic-configuration-viewer";
+import { ConfigurationPage } from "../configuration/configuration";
 
 /**
  * Home page.
  */
 @Component({
-	templateUrl: "home.html"
+	templateUrl: "home.html",
 })
 export class HomePage {
 
