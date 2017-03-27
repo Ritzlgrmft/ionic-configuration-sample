@@ -1,5 +1,5 @@
 import { APP_INITIALIZER, ErrorHandler, NgModule } from "@angular/core";
-import { Http, HttpModule } from "@angular/http";
+import { HttpModule } from "@angular/http";
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
 import { ConfigurationService } from "ionic-configuration-service";
 import { ConfigurationViewerModule } from "ionic-configuration-viewer";

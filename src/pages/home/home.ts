@@ -33,7 +33,10 @@ export class HomePage {
 
 		this.languages = ["en", "de", "custom"];
 		this.selectedLanguage = "en";
-		this.translation = { title: "myTitle", cancel: "myCancel" };
+		this.translation = {
+			cancel: "myCancel",
+			title: "myTitle",
+		};
 	}
 
 	/**
