@@ -1,9 +1,13 @@
 import { APP_INITIALIZER, ErrorHandler, NgModule } from "@angular/core";
 import { HttpModule } from "@angular/http";
+import { BrowserModule } from "@angular/platform-browser";
+
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
+
 import { ConfigurationService } from "ionic-configuration-service";
 import { ConfigurationViewerModule } from "ionic-configuration-viewer";
 import { LoggingService } from "ionic-logging-service";
+
 import { ConfigurationPage } from "../pages/configuration/configuration";
 import { HomePage } from "../pages/home/home";
 import { AppComponent } from "./app.component";
@@ -32,6 +36,7 @@ export function loadConfiguration(configurationService: ConfigurationService): (
 		HomePage,
 	],
 	imports: [
+		BrowserModule,
 		IonicModule.forRoot(AppComponent),
 		HttpModule,
 		ConfigurationViewerModule,
