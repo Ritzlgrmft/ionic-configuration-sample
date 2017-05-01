@@ -22,7 +22,8 @@
 		"ionic_copy": "./config/copy.config.js",
 		"commitizen": {
 			"path": "cz-conventional-changelog"
-		}
+		},
+		"ionic_manual_treeshaking": false
 	},
 	"dependencies": {
 		"@angular/animations": "4.0.2",
