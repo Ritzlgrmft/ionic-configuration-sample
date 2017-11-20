@@ -1,5 +1,5 @@
+import { HttpClientModule } from "@angular/common/http";
 import { APP_INITIALIZER, ErrorHandler, NgModule } from "@angular/core";
-import { HttpModule } from "@angular/http";
 import { BrowserModule } from "@angular/platform-browser";
 
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
@@ -38,7 +38,7 @@ export function loadConfiguration(configurationService: ConfigurationService): (
 	imports: [
 		BrowserModule,
 		IonicModule.forRoot(AppComponent),
-		HttpModule,
+		HttpClientModule,
 		ConfigurationViewerModule,
 	],
 	providers: [
