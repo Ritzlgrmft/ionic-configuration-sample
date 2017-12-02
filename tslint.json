@@ -2,11 +2,15 @@
 	"rulesDirectory": [
 		"node_modules/codelyzer"
 	],
-	"extends": "tslint:recommended",
+	"extends": "tslint:latest",
 	"rules": {
 		"indent": [
 			true,
 			"tabs"
+		],
+		"no-submodule-imports": [
+			true,
+			"@angular/common"
 		],
 		"directive-selector": [
 			true,

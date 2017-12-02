@@ -23,5 +23,6 @@ The configuration sample is a small Ionic app demonstrating the usage of
 git clone https://github.com/Ritzlgrmft/ionic-configuration-sample.git
 cd ionic-configuration-sample
 npm install
-ionic serve
+ionic cordova platform add ios
+ionic cordova emulate ios --target iPhone-X --livereload
 ```

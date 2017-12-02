@@ -1,58 +1,73 @@
 {
-	"name": "ionic-configuration-sample",
-	"version": "0.0.0-development",
-	"description": "Sample for ionic-configuration-service and ionic-configuration-viewer",
-	"author": {
-		"name": "Markus Wagner",
-		"email": "markus.wagner02@web.de"
-	},
-	"repository": "https://github.com/Ritzlgrmft/ionic-configuration-sample.git",
-	"license": "MIT",
-	"private": false,
-	"scripts": {
-		"clean": "ionic-app-scripts clean",
-		"build": "ionic-app-scripts build",
-		"ionic:build": "ionic-app-scripts build",
-		"ionic:serve": "ionic-app-scripts serve",
-		"lint": "tslint --project tsconfig.json --format verbose",
-		"test": "npm run lint && npm run ionic:build && npm run ionic:build --prod",
-		"semantic-release": "semantic-release pre && semantic-release post"
-	},
-	"config": {
-		"ionic_copy": "./config/copy.config.js",
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		},
-		"ionic_manual_treeshaking": false
-	},
-	"dependencies": {
-		"@angular/animations": "5.0.0",
-		"@angular/common": "5.0.0",
-		"@angular/compiler": "5.0.0",
-		"@angular/compiler-cli": "5.0.0",
-		"@angular/core": "5.0.0",
-		"@angular/forms": "5.0.0",
-		"@angular/http": "5.0.0",
-		"@angular/platform-browser": "5.0.0",
-		"@angular/platform-browser-dynamic": "5.0.0",
-		"@angular/platform-server": "5.0.0",
-		"ionic-angular": "3.9.2",
-		"ionicons": "3.0.0",
-		"rxjs": "5.5.2",
-		"sw-toolbox": "3.6.0",
-		"zone.js": "0.8.18",
-		"cz-conventional-changelog": "2.1.0",
-		"ionic-configuration-service": "../ionic-configuration-service/ionic-configuration-service-0.0.0-development.tgz",
-		"ionic-configuration-viewer": "../ionic-configuration-viewer/ionic-configuration-viewer-0.0.0-development.tgz",
-		"ionic-logging-service": "../ionic-logging-service/ionic-logging-service-0.0.0-development.tgz"
-	},
-	"devDependencies": {
-		"@ionic/app-scripts": "3.1.2",
-		"@types/cordova": "0.0.34",
-		"codelyzer": "4.0.1",
-		"ionic": "3.18.0",
-		"semantic-release": "8.2.0",
-		"tslint": "5.8.0",
-		"typescript": "2.4.2"
-	}
+  "name": "ionic-configuration-sample",
+  "version": "0.0.0-development",
+  "description": "Sample for ionic-configuration-service and ionic-configuration-viewer",
+  "author": {
+    "name": "Markus Wagner",
+    "email": "markus.wagner02@web.de"
+  },
+  "repository": "https://github.com/Ritzlgrmft/ionic-configuration-sample.git",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "lint": "tslint --project tsconfig.json --format verbose",
+    "test": "npm run lint && npm run ionic:build && npm run ionic:build --prod",
+    "semantic-release": "semantic-release pre && semantic-release post"
+  },
+  "config": {
+    "ionic_copy": "./config/copy.config.js",
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@angular/animations": "5.0.0",
+    "@angular/common": "5.0.0",
+    "@angular/compiler": "5.0.0",
+    "@angular/compiler-cli": "5.0.0",
+    "@angular/core": "5.0.0",
+    "@angular/forms": "5.0.0",
+    "@angular/http": "5.0.0",
+    "@angular/platform-browser": "5.0.0",
+    "@angular/platform-browser-dynamic": "5.0.0",
+    "@angular/platform-server": "5.0.0",
+    "@ionic-native/core": "4.4.2",
+    "@ionic-native/splash-screen": "4.4.2",
+    "cordova-ios": "4.5.4",
+    "cordova-plugin-ionic-webview": "1.1.16",
+    "cordova-plugin-splashscreen": "^4.1.0",
+    "cordova-plugin-statusbar": "2.3.0",
+    "cz-conventional-changelog": "2.1.0",
+    "ionic-angular": "3.9.2",
+    "ionic-configuration-service": "6.0.0",
+    "ionic-configuration-viewer": "5.0.0",
+    "ionic-logging-service": "4.0.0",
+    "ionicons": "3.0.0",
+    "rxjs": "5.5.2",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "3.1.4",
+    "@types/cordova": "0.0.34",
+    "codelyzer": "4.0.1",
+    "ionic": "3.19.0",
+    "semantic-release": "8.2.0",
+    "tslint": "5.8.0",
+    "typescript": "2.4.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-splashscreen": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
 }
