@@ -4,6 +4,8 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
 
+import { SplashScreen } from "@ionic-native/splash-screen";
+
 import { ConfigurationService } from "ionic-configuration-service";
 import { ConfigurationViewerModule } from "ionic-configuration-viewer";
 import { LoggingService } from "ionic-logging-service";
@@ -51,6 +53,7 @@ export function loadConfiguration(configurationService: ConfigurationService): (
 			useFactory: loadConfiguration,
 		},
 		LoggingService,
+		SplashScreen,
 	],
 })
 export class AppModule { }
