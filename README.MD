@@ -7,15 +7,13 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Known Vulnerabilities](https://snyk.io/test/github/ritzlgrmft/ionic-configuration-sample/badge.svg)](https://snyk.io/test/github/ritzlgrmft/ionic-configuration-sample)
 
-The configuration sample is a small Ionic app demonstrating the usage of
-[ionic-configuration-service](https://github.com/Ritzlgrmft/ionic-configuration-service) and
-[ionic-configuration-viewer](https://github.com/Ritzlgrmft/ionic-configuration-viewer).
+**The configuration sample is a small Ionic app demonstrating the usage of [ionic-configuration-service](https://github.com/Ritzlgrmft/ionic-configuration-service) and [ionic-configuration-viewer](https://github.com/Ritzlgrmft/ionic-configuration-viewer). Since these components are deprecated, the sample is deprecated as well.**
 
 ## Screenshots
 
 | Home Page | Configuration Page | Configuration Modal |
 | ---------- | ------------- | ----------- |
-| ![](docs/home-page.png) | ![](docs/configuration-page.png) | ![](docs/configuration-modal.png) |
+| ![Home Page](docs/home-page.png) | ![Configuration Page](docs/configuration-page.png) | ![Configuration Modal](docs/configuration-modal.png) |
 
 ## Usage
 
